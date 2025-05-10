@@ -256,3 +256,64 @@ footer:before {
         grid-template-columns: 50% 50%;
     }
 }
+
+/**** Responsive design version mobile ****/
+
+@media screen and (max-width: 767px) {
+
+    header,
+    .section__1,
+    .section__2 {
+        display: block;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .header__title {
+        font-size: 5rem;
+    }
+
+    .img__banner {
+        height: 50vh;
+    }
+
+    .btn {
+        margin-bottom: 40px;
+    }
+
+    .footer__list {
+        min-width: 200px;
+    }
+
+    .footer__link {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer i {
+        font-size: 1rem;
+    }
+}
+
+/**** Responsive design petits écrans ****/
+
+@media screen and (max-width: 572px) {
+    .form__grid {
+        display: block;
+    }
+
+    input,
+    textarea {
+        margin: 15px 0 20px;
+    }
+
+    .form__group__name {
+        margin-right: 0px;
+    }
+}
