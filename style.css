@@ -213,7 +213,7 @@ footer {
     position: relative;
 }
 
-footer:before {
+footer::before {
     content: "";
     position: absolute;
     top: 0;
@@ -348,5 +348,9 @@ footer:before {
 
     section {
         box-shadow: inset 0 2px 0 rgba(148, 161, 178, 0.69);
+    }
+
+    footer::before {
+        background-color: rgba(148, 161, 178, 0.69);
     }
 }
