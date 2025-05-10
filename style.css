@@ -246,3 +246,13 @@ footer:before {
 .footer__link:hover {
     border: 1px solid #7f5af0;
 }
+
+/**** Responsive design version tablette ****/
+
+@media screen and (max-width: 991px) {
+
+    .section__1,
+    .section__2 {
+        grid-template-columns: 50% 50%;
+    }
+}
