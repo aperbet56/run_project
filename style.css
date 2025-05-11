@@ -240,7 +240,7 @@ footer::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: border 0.3s ease-out;
+    transition: border-color 0.3s ease-out;
 }
 
 .footer__link:hover {
