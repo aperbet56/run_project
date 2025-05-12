@@ -78,3 +78,23 @@ const emailValidation = (email) => {
 };
 // Appel de la fonction emailValidation
 emailValidation(email);
+
+/**
+ * Déclaration de la fonction textareaValidation pour la validation du textarea
+ * @param {String} textarea
+ */
+const textareaValidation = (textarea) => {
+  textarea.addEventListener("input", (e) => {
+    e.preventDefault();
+    if (textarea.value == "") {
+      textarea.style.border = "2px solid #ff0000";
+      return false;
+    } else {
+      textarea.style.border = " 2px solid #0fbd3a";
+      return true;
+    }
+  });
+};
+
+// Appel de la fonction textareaValidation
+textareaValidation(textarea);
