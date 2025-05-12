@@ -1,5 +1,7 @@
 ## PROJET RUN
 
+![Design preview for the run project](./maquettes/maquette desktop.png)
+
 ## Le challenge
 
 Création du projet Run en HTML5, CSS3 et JavaScript.
