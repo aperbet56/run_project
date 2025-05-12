@@ -1,6 +1,6 @@
 ## PROJET RUN
 
-![Design preview for the run project](./maquettes/maquette desktop.png)
+![Design preview for the run project](maquettes/maquette desktop.png)
 
 ## Le challenge
 
