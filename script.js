@@ -42,6 +42,7 @@ const regexEmail = /^[a-zA-Z0-9.-_]+[@]{1}[a-zA-Z0-9.-_]+[.]{1}[a-z]{2,10}$/;
 const lastNameValidation = (lastName) => {
   // Ecoute de l'événement "change" sur l'input lastName
   lastName.addEventListener("change", (e) => {
+    // Suppression du comportement par défaut
     e.preventDefault();
     // condition if... else
     // La méthode match() permet d'obtenir le tableau des correspondances entre la chaîne courante et une expression rationnelle.
@@ -56,3 +57,24 @@ const lastNameValidation = (lastName) => {
 };
 // Appel de la fonction lastNameValidation
 lastNameValidation(lastName);
+
+/**
+ * Déclaration de la fonction emailValidation pour la validation du champ email
+ * @param {String} email
+ */
+const emailValidation = (email) => {
+  // Ecoute de l'événement "change" sur l'input email
+  email.addEventListener("change", (e) => {
+    // Suppression du comportement par défaut
+    e.preventDefault();
+    if (email.value.match(regexEmail)) {
+      email.style.border = "2px solid #0fbd3a";
+      return true;
+    } else {
+      email.style.border = "2px solid #ff0000";
+      return false;
+    }
+  });
+};
+// Appel de la fonction emailValidation
+emailValidation(email);
