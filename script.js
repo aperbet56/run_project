@@ -1,5 +1,13 @@
 // Récupération des éléments HTML5
 const sections = document.querySelectorAll("section");
+const lastName = document.querySelector("#name");
+console.log(lastName);
+const email = document.querySelector("#email");
+console.log(email);
+const textarea = document.querySelector("#message");
+console.log(textarea);
+const submitBtn = document.querySelector("button");
+console.log(submitBtn);
 
 // Création de l'objet options permettant de contrôler les circonstances selon lesquelles la fonction callback de l'observateur est invoquée
 let options = {
@@ -25,3 +33,8 @@ const observer = new IntersectionObserver(handleIntersect, options);
 sections.forEach((section) => {
   observer.observe(section);
 });
+
+// Regex
+
+const regexName = /^[A-Z][A-Za-z\é\è\ê\ô\-]+$/;
+const regexEmail = /^[a-zA-Z0-9.-_]+[@]{1}[a-zA-Z0-9.-_]+[.]{1}[a-z]{2,10}$/;
