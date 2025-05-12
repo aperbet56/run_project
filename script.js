@@ -1,13 +1,9 @@
 // Récupération des éléments HTML5
 const sections = document.querySelectorAll("section");
 const lastName = document.querySelector("#name");
-console.log(lastName);
 const email = document.querySelector("#email");
-console.log(email);
 const textarea = document.querySelector("#message");
-console.log(textarea);
 const submitBtn = document.querySelector("button");
-console.log(submitBtn);
 
 // Création de l'objet options permettant de contrôler les circonstances selon lesquelles la fonction callback de l'observateur est invoquée
 let options = {
@@ -38,3 +34,25 @@ sections.forEach((section) => {
 
 const regexName = /^[A-Z][A-Za-z\é\è\ê\ô\-]+$/;
 const regexEmail = /^[a-zA-Z0-9.-_]+[@]{1}[a-zA-Z0-9.-_]+[.]{1}[a-z]{2,10}$/;
+
+/**
+ * Déclaration de la fonction lastNameValidation pour la validation du champ nom
+ *  @param {String} lastName
+ */
+const lastNameValidation = (lastName) => {
+  // Ecoute de l'événement "change" sur l'input lastName
+  lastName.addEventListener("change", (e) => {
+    e.preventDefault();
+    // condition if... else
+    // La méthode match() permet d'obtenir le tableau des correspondances entre la chaîne courante et une expression rationnelle.
+    if (lastName.value.match(regexName)) {
+      lastName.style.border = "2px solid #0fbd3a";
+      return true;
+    } else {
+      lastName.style.border = "2px solid #ff0000";
+      return false;
+    }
+  });
+};
+// Appel de la fonction lastNameValidation
+lastNameValidation(lastName);
