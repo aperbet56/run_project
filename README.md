@@ -4,7 +4,7 @@
 
 ## Le challenge
 
-Création du projet Run en HTML5, CSS3 et JavaScript.
+Création du projet Run en HTML5, CSS et JavaScript avec la mise en place d'un mode light et dark (@media(prefers-colors-scheme)), une apparition des sections du site en fonction du scroll sur la page et la validation du formulaire (mise enplace de regex...)
 
 ## Démonstration
 
