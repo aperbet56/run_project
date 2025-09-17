@@ -1,6 +1,10 @@
 ## PROJET RUN
 
+MODE CLAIR :
+
 ![Design preview for the run project](./img/preview.png)
+
+MODE NUIT :
 
 ![Design preview for the run project](./img/preview_dark_mode.png)
 
