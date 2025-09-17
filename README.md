@@ -1,6 +1,8 @@
 ## PROJET RUN
 
-![Design preview for the run project](./maquettes/preview.png)
+![Design preview for the run project](./img/preview.png)
+
+![Design preview for the run project](./img/preview_dark_mode.png)
 
 ## Le challenge
 
